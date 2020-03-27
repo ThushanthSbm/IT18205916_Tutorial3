@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="@string/changefragment"
+        android:text="@string/Fragment1"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button2"
+        tools:layout_editor_absoluteX="34dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="@string/changefragment2"
+        android:text="@string/Fragment2"
+        tools:layout_editor_absoluteX="165dp"
+        tools:layout_editor_absoluteY="96dp" />
+
+    <fragment
+        android:id="@+id/fragment4"
+        android:name="com.example.androidfragment.fragment1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/fgmntDefault"
+        tools:layout_editor_absoluteX="157dp"
+        tools:layout_editor_absoluteY="204dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
